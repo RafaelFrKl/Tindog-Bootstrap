@@ -1,0 +1,37 @@
+#title{
+    background-color: #ff4c68;
+}
+.container-fluid{
+    padding: 3% 15%;
+}
+/*Features Section*/
+#features{
+    padding: 7% 15%;
+}
+.feature-box{
+    text-align: center;
+    padding: 8%;
+}
+.icon{
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+.icon:hover { /*On hover command*/
+  color:#ff4c68;
+}
+  
+h1{
+    font-family: 'Roboto', sans-serif; /*Changes font to Roboto*/
+    font-weight: 900; /*Changes Robot Regular to Roboto Black, heaviest font weight*/
+    font-size: 3rem; 
+    line-height: 1.5;
+}
+h3{
+    font-family: 'Roboto', sans-serif; /*Changes font to Roboto*/
+    font-weight: 700;
+    font-size: 1.5rem; 
+}
+p{
+    font-family: 'Roboto', sans-serif; /*Changes font to Roboto*/
+    color: #8f8f8f;
+}   
