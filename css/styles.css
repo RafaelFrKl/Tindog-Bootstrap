@@ -1,9 +1,11 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
 h1{
     font-family: 'Roboto', sans-serif; /*Changes font to Roboto*/
     font-weight: 900; /*Changes Robot Regular to Roboto Black, heaviest font weight*/
     font-size: 5rem; 
     line-height: 1.5;
-    color: white;
 }
 h2{
     font-family: 'Roboto', sans-serif; /*Changes font to Roboto*/
@@ -22,23 +24,35 @@ p{
 }   
 #title{
     background-color: #ff4c68;
+    color: white;
 }
 .container-fluid{
     padding: 3% 15% 10%;
 }
+
+/* Navigation Bar */
 .navbar{
-    padding-bottom: 7%;
+    padding: 0 0 4.5rem;
 }
 .navbar-brand{
     font-family: 'Roboto', sans-serif; /*Changes font to Roboto*/
-    font-weight: 700;
-    font-size: 3rem; 
+    font-weight: bold;
+    font-size: 2.5rem; 
+}
+.nav-item{
+    padding: 0 18px; 
 }
 .nav-link{
-font-family: 'Roboto', sans-serif; /*Changes font to Roboto*/
-    font-weight: 700;
-    font-size: 1.5rem; 
+    font-family: 'Roboto', sans-serif; /*Changes font to Roboto*/
+    font-size: 1.2rem;
 }
+
+/* Download Buttons */
+.download-btn{
+   margin: 5% 3% 5% 0;
+}
+
+/* Title Image */
 .title-image{
     width: 60%;
     transform: rotate(25deg);
@@ -97,4 +111,40 @@ font-family: 'Roboto', sans-serif; /*Changes font to Roboto*/
 
 .pricing-column{
     padding: 3% 2%;
+}
+
+/*Call to Action*/
+#cta{
+    background-color: #ff4c68;
+    color: #ffffff;
+    text-align: center;
+    padding: 7% 15%;
+}
+.cta-heading{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+/*Footer*/
+#footer{
+    background-color: white;
+    text-align: center;
+    padding: 7% 15%;
+}
+.social-icon{
+    margin: 20px 10px;
+}
+
+/*Responsivness: Media Query Breakpoints*/
+/*@media <type> <feature> */
+@media (max-width: 1028px){
+    #title{
+        text-align: center;
+    }
+
+    .title-image{
+        position: static;
+        transform: rotate(0);
+    }
 }

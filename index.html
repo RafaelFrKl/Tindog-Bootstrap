@@ -53,13 +53,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="">Contact</a>
+                <a class="nav-link" href="#footer">Contact</a><!-- Use IDs sparingly so that you use them to links-->
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Pricing</a>
+                <a class="nav-link" href="#pricing">Pricing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Download</a>
+                <a class="nav-link" href="#cta  ">Download</a>
               </li>
             </ul>
           </div>
@@ -71,8 +71,8 @@
           <div class="col-lg-6">
             <!--col-lg-2 col-md-3 col-sm-12 = Responsive Column sizes (Bootstrap Grid Layout)-->
             <h1>Meet new and interesting dogs nearby.</h1>
-            <button type="button" class="btn btn-dark btn-lg"><i class="fab fa-apple"></i> Download</button>
-            <button type="button" class="btn btn-outline-light btn-lg"><i class="fab fa-google-play"></i> Download</button>
+            <button type="button" class="download-btn btn btn-dark btn-lg"><i class="fab fa-apple"></i> Download</button>
+            <button type="button" class="download-btn btn btn-outline-light btn-lg"><i class="fab fa-google-play"></i> Download</button>
           </div>
           <div class="col-lg-6">
             <img class="title-image" src="images/iphone6.png" alt="iphone-mockup" />
@@ -176,33 +176,37 @@
       </div>
 
       <div class="pricing-column col-lg-4 col-md-12">
-      <div class="card">
-        <div class="card-header">
-          <h3>Mastiff</h3>
+        <div class="card">
+          <div class="card-header">
+            <h3>Mastiff</h3>
+          </div>
+          <div class="card-body">
+            <h2>$99 / mo</h2>
+            <p>Pirority Listing</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-lg btn-dark btn-block" type="button">Sign Up</button>
+          </div>
         </div>
-        <div class="card-body">
-          <h2>$99 / mo</h2>
-          <p>Pirority Listing</p>
-          <p>Unlimited Matches</p>
-          <p>Unlimited Messages</p>
-          <p>Unlimited App Usage</p>
-          <button class="btn btn-lg btn-dark btn-block" type="button">Sign Up</button>
-        </div>
-      </div>
       </div>
     </div>
-    </section>s
+    </section>
     <!-- Call to Action -->
 
     <section id="cta">
-      <h3>Find the True Love of Your Dog's Life Today.</h3>
-      <button type="button">Download</button>
-      <button type="button">Download</button>
+      <h3 class="cta-heading">Find the True Love of Your Dog's Life Today.</h3>
+      <button type="button" class="download-btn btn btn-dark btn-lg"><i class="fab fa-apple"></i> Download</button>
+      <button type="button" class="download-btn btn btn-light btn-lg"><i class="fab fa-google-play"></i> Download</button>
     </section>
 
     <!-- Footer -->
 
     <footer id="footer">
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-facebook-square"></i>
+      <i class="social-icon fab fa-instagram"></i>
+      <i class="social-icon fas fa-envelope"></i>
       <p>© Copyright 2018 TinDog</p>
     </footer>
   </body>
