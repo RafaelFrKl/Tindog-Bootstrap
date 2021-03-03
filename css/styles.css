@@ -1,8 +1,9 @@
 h1{
     font-family: 'Roboto', sans-serif; /*Changes font to Roboto*/
     font-weight: 900; /*Changes Robot Regular to Roboto Black, heaviest font weight*/
-    font-size: 3rem; 
+    font-size: 5rem; 
     line-height: 1.5;
+    color: white;
 }
 h2{
     font-family: 'Roboto', sans-serif; /*Changes font to Roboto*/
@@ -23,12 +24,34 @@ p{
     background-color: #ff4c68;
 }
 .container-fluid{
-    padding: 3% 15%;
+    padding: 3% 15% 10%;
+}
+.navbar{
+    padding-bottom: 7%;
+}
+.navbar-brand{
+    font-family: 'Roboto', sans-serif; /*Changes font to Roboto*/
+    font-weight: 700;
+    font-size: 3rem; 
+}
+.nav-link{
+font-family: 'Roboto', sans-serif; /*Changes font to Roboto*/
+    font-weight: 700;
+    font-size: 1.5rem; 
+}
+.title-image{
+    width: 60%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
 }
 
 /*Features Section*/
 #features{
     padding: 7% 15%;
+    background-color: white;
+    position: relative;
+    z-index: 1 /*Changes layering level, only wortks when position is specified*/
 }
 .feature-box{
     text-align: center;
