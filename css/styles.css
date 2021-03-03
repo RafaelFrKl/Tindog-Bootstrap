@@ -1,33 +1,35 @@
 body{
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
-h1{
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto', sans-serif; /*Changes font to Roboto*/
+}
+p{
+    color: #8f8f8f;
+} 
+/* Headings */
+.big-heading{
     font-family: 'Roboto', sans-serif; /*Changes font to Roboto*/
     font-weight: 900; /*Changes Robot Regular to Roboto Black, heaviest font weight*/
     font-size: 5rem; 
     line-height: 1.5;
 }
-h2{
-    font-family: 'Roboto', sans-serif; /*Changes font to Roboto*/
+.section-heading{
     font-weight: 700;
     font-size: 3rem; 
     line-height: 1.5;
 }
-h3{
-    font-family: 'Roboto', sans-serif; /*Changes font to Roboto*/
-    font-weight: 700;
-    font-size: 1.5rem; 
+/* Containers */
+.container-fluid{
+    padding: 7% 15%;
 }
-p{
-    font-family: 'Roboto', sans-serif; /*Changes font to Roboto*/
-    color: #8f8f8f;
-}   
+
+/* Title Section*/
 #title{
     background-color: #ff4c68;
     color: white;
-}
-.container-fluid{
-    padding: 3% 15% 10%;
+    text-align: left;
 }
 
 /* Navigation Bar */
@@ -62,13 +64,15 @@ p{
 
 /*Features Section*/
 #features{
-    padding: 7% 15%;
     background-color: white;
     position: relative;
     z-index: 1 /*Changes layering level, only wortks when position is specified*/
 }
+.feature-title{
+    font-weight: 700;
+    font-size: 1.5rem; 
+}
 .feature-box{
-    text-align: center;
     padding: 8%;
 }
 .icon{
@@ -81,21 +85,21 @@ p{
 
 /*Testimonial Section*/
 #testimonials{
-    text-align: center;
     color: #ffffff;
     background-color: #ef8172;
+}
+.testimonial-text{
+    font-weight: 700;
+    font-size: 3rem; 
+    line-height: 1.5;
 }
 .testimonial-image{
     width: 10%;
     border-radius: 100%;
     margin: 20px;
 }
-.carousel-item{
-    padding: 7% 15%;
-}
 #press{
     background-color: #ef8172;
-    text-align: center;
     padding-bottom: 3%;
 }
 .press-logo{
@@ -106,9 +110,12 @@ p{
 /*Pricing Section*/
 #pricing{
     padding: 100px;
-    text-align: center;
 }
-
+.price-text{
+    font-weight: 700;
+    font-size: 3rem; 
+    line-height: 1.5; 
+}
 .pricing-column{
     padding: 3% 2%;
 }
@@ -117,8 +124,6 @@ p{
 #cta{
     background-color: #ff4c68;
     color: #ffffff;
-    text-align: center;
-    padding: 7% 15%;
 }
 .cta-heading{
     font-family: 'Roboto', sans-serif;
@@ -129,8 +134,6 @@ p{
 /*Footer*/
 #footer{
     background-color: white;
-    text-align: center;
-    padding: 7% 15%;
 }
 .social-icon{
     margin: 20px 10px;
