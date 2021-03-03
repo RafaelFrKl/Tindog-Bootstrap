@@ -2,7 +2,7 @@ body{
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6{ /* Combining Multiple Selectors */
     font-family: 'Roboto', sans-serif; /*Changes font to Roboto*/
 }
 p{
@@ -25,11 +25,13 @@ p{
     padding: 7% 15%;
 }
 
-/* Title Section*/
-#title{
+/* Sections */
+.colored-section{
     background-color: #ff4c68;
     color: white;
-    text-align: left;
+}
+.white-section{
+    background-color: white;
 }
 
 /* Navigation Bar */
@@ -52,6 +54,12 @@ p{
 /* Download Buttons */
 .download-btn{
    margin: 5% 3% 5% 0;
+}
+
+/* Title Section*/
+#title .container-fluid{ /* Hierarchical selectors: parent -> child, contents in child are overwritten*/
+    padding: 3% 15% 7%;
+    text-align: left;
 }
 
 /* Title Image */
@@ -85,7 +93,6 @@ p{
 
 /*Testimonial Section*/
 #testimonials{
-    color: #ffffff;
     background-color: #ef8172;
 }
 .testimonial-text{
@@ -121,10 +128,6 @@ p{
 }
 
 /*Call to Action*/
-#cta{
-    background-color: #ff4c68;
-    color: #ffffff;
-}
 .cta-heading{
     font-family: 'Roboto', sans-serif;
     font-size: 3.5rem;
